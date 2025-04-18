@@ -1,0 +1,50 @@
+# Ignore Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Jupyter & VSCode
+.ipynb_checkpoints/
+.vscode/
+*.code-workspace
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+
+# Terraform
+terraform/.terraform/
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+
+# Service account keys / credentials
+keys/
+*.json
+*.key
+
+# dbt artifacts
+dbt_retail/target/
+dbt_retail/dbt_modules/
+dbt_retail/profiles.yml
+
+# Airflow
+logs/
+airflow/logs/
+airflow/__pycache__/
+
+# Raw data
+raw_data/
+data_processing/__pycache__/
+
+# Output or temp files
+*.log
+*.tmp
+*.bak
+*.csv
