@@ -4,9 +4,10 @@ SELECT
   order_id,
   customer_id,
   order_status,
-  order_purchase_timestamp,
-  order_approved_at,
-  order_delivered_carrier_date,
-  order_delivered_customer_date,
-  order_estimated_delivery_date
+  SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', order_purchase_timestamp) AS order_purchase_timestamp,
+  EXTRACT(DATE FROM SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', order_purchase_timestamp)) AS order_date,
+  SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', order_approved_at) AS order_approved_at,
+  SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', order_delivered_carrier_date) AS order_delivered_carrier_date,
+  SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', order_delivered_customer_date) AS order_delivered_customer_date,
+  SAFE.PARSE_TIMESTAMP('%Y-%m-%d %H:%M:%S', order_estimated_delivery_date) AS order_estimated_delivery_date
 FROM {{ source('bronze', 'orders') }}

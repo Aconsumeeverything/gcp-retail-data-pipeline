@@ -44,6 +44,6 @@ models:
 
     seeds:
       Retail_Analytics:
-        dates:
+        dim_dates:
           +schema: silver
 
