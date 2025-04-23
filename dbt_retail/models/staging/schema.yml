@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: bronze
+    schema: bronze
+    database: retail-data-pipeline-457208
+    tables:
+      - name: customers
+      - name: orders
+      - name: order_items
+      - name: payments
+      - name: products
+      - name: reviews
+      - name: sellers
+      - name: geolocation
+      - name: product_category_translation
