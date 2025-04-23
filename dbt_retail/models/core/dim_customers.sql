@@ -1,5 +1,6 @@
 {{ config(materialized='table') }}
 
+
 -- Dimension table for customers
 -- One row per unique customer (customer_unique_id), with location info
 
