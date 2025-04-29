@@ -38,7 +38,7 @@ This project ingests raw CSV data from a retail marketplace (Olist dataset), pro
 > You’ll need:
 > - A GCP Project with BigQuery and Composer enabled
 > - Terraform installed
-> - Python 3.10+ and `pip install -r requirements.txt`
+> - Python 3.10+ 
 
 
 
