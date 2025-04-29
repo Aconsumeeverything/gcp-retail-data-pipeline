@@ -33,6 +33,13 @@ This project ingests raw CSV data from a retail marketplace (Olist dataset), pro
 ## 🧩 Architecture
   <img width="565" alt="schema" src="https://github.com/user-attachments/assets/9b9a959f-b9af-451d-a5ea-5282191d8bea" />
 
+
+## Data modeling
+![raw_model](https://github.com/user-attachments/assets/c23d6339-bf40-4fea-8d2f-86055a83f35b)
+
+=> Star schema Lineag
+
+![image](https://github.com/user-attachments/assets/adb666fa-d954-4b30-9076-812e87e55e08)
 ## ⚙️ Setup & Execution
 
 > You’ll need:
